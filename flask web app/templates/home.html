@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br><br><br>
+<h1 class="text-grey" style="text-align: center;">Water Predection</h2>
+  <br><br>
+
+  <br>
+  <div class="container pt-3" style="max-width: 75%;">
+    <div class="p-3 mb-2 bg-light text-dark rounded">
+      <h5>Give water features:</h5>
+      <br>
+      <form method="Post" ,action="">
+        {{ form.hidden_tag() }}
+        <table style="width:100%">
+          <tr>
+            <td><label for="aluminium">1-Aluminium:</label><br>
+              {{ form.aluminium(class="form-control") }}<br></td>
+
+            <td><label for="ammonia">2-Ammonia:</label><br>
+              {{ form.ammonia(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="arsenic">3-Arsenic</label><br>
+              {{ form.arsenic(class="form-control") }} <br></td>
+
+            <td><label for="barium">4-Barium</label><br>
+              {{ form.barium(class="form-control") }} <br></td>
+          </tr>
+          <tr>
+            <td><label for="cadmium">5-Cadmium</label><br>
+              {{ form.cadmium(class="form-control") }} <br></td>
+
+            <td><label for="chloramine">6-Chloramine</label><br>
+              {{ form.chloramine(class="form-control") }} <br></td>
+          </tr>
+          <tr>
+            <td><label for="chromium">7-Chromium</label><br>
+              {{ form.chromium(class="form-control") }}<br></td>
+
+            <td><label for="copper">8-Copper</label><br>
+              {{ form.copper(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="flouride">9-Flouride</label><br>
+              {{ form.flouride(class="form-control") }}<br></td>
+
+            <td><label for="bacteria">10-Bacteria</label><br>
+              {{ form.bacteria(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="viruses">11-Viruses</label><br>
+              {{ form.viruses(class="form-control") }}<br></td>
+
+            <td><label for="lead">12-Lead</label><br>
+              {{ form.lead(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="nitrates">13-Nitrates</label><br>
+              {{ form.nitrates(class="form-control") }}<br></td>
+
+            <td><label for="nitrites">14-Nitrites</label><br>
+              {{ form.nitrites(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="mercury">15-Mercury</label><br>
+              {{ form.mercury(class="form-control") }}<br></td>
+
+            <td><label for="perchlorate">16-Perchlorate</label><br>
+              {{ form.perchlorate(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="radium">17-Radium</label><br>
+              {{ form.radium(class="form-control") }}<br></td>
+
+            <td><label for="selenium">18-Selenium</label><br>
+              {{ form.selenium(class="form-control") }}<br></td>
+          </tr>
+          <tr>
+            <td><label for="silver">19-Silver</label><br>
+              {{ form.silver(class="form-control") }}<br></td>
+
+            <td><label for="uranium">20-Uranium</label><br>
+              {{ form.uranium(class="form-control") }}<br></td>
+          </tr>
+        </table>
+
+        <br>{{ form.submit(class="btn btn-primary") }}<br>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
